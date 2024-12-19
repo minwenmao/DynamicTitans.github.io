@@ -45,4 +45,41 @@
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div style="text-align: center; margin: 40px 0;"></div>
+                <h5 class = 'section-subheading'>{{ site.data.sitetext[site.locale].spirits.text5 | markdownify | default: "certificate" }}</h5>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+            <img src="{{ classification.image3 | default: '/assets/img/spirits/pie1.png' }}" alt="Geographical Dimension" 
+            class="img-fluid" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="col-md-6">
+            <img src="{{ classification.image3 | default: '/assets/img/spirits/pie2.png' }}" alt="Geographical Dimension" 
+            class="img-fluid" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+            <img src="{{ classification.image3 | default: '/assets/img/spirits/pie3.png' }}" alt="Geographical Dimension" 
+            class="img-fluid" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="col-md-6">
+            <img src="{{ classification.image3 | default: '/assets/img/spirits/pie4.png' }}" alt="Geographical Dimension" 
+            class="img-fluid" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+            <h6 class = 'section-subheading'>{{ site.data.sitetext[site.locale].spirits.text6 | markdownify | default: "certificate" }}</h6>
+        </div>
+        <div class="col-md-12">
+            <h5 class = 'section-subheading'>{{ site.data.sitetext[site.locale].spirits.text7 | markdownify | default: "certificate" }}</h5>
+        </div>
+        </div>
+    </div>
   </section>
