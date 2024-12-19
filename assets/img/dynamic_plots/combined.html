@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actors Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: space-between; /* 左右对齐 */
+            align-items: stretch; /* 两边内容等高 */
+            height: 100vh; /* 页面高度 */
+            overflow: hidden;
+        }
+
+        .side {
+            flex: 1; 
+            overflow: hidden; 
+        }
+
+        .left {
+            background-color: white; /* 左侧背景颜色 */
+        }
+
+        .right {
+            background-color: white; /* 右侧背景颜色 */
+        }
+
+        .title {
+            font-size: 24px;
+            position: absolute; /* 启用绝对定位 */
+            top: 50px; /* 距顶部 10px */
+            transform: translateX(110%); /* 修正居中偏移 */
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+        }
+
+
+        .container {
+            position: relative;
+            width: 800px;
+            height: 800px;
+            margin: auto; /* 居中容器 */
+        }
+
+        .ring {
+            position: absolute;
+            border: 5px solid orange;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .card {
+            position: absolute;
+            overflow: visible;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            z-index: 2;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .card:hover {
+            z-index: 999;
+            transform: scale(1.2);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .tooltip {
+            position: absolute;
+            bottom: calc(100% + 5px); /* Position above the card with a small gap */
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+            z-index: 9999; /* Ensure tooltip is on top */
+            visibility: hidden; /* Default hidden */
+            opacity: 0;
+            transition: visibility 0s, opacity 0.3s ease;
+        }
+
+        .card:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- 左侧 -->
+    <div class="side left">
+        <div class="title">Overperformed Actors</div>
+        <div class="container" id="higher">
+            <!-- Actors with higher appearances will be dynamically generated -->
+        </div>
+    </div>
+
+    <!-- 右侧 -->
+    <div class="side right">
+        <div class="title">Underperformed Actors</div>
+        <div class="container" id="lower">
+            <!-- Actors with lower appearances will be dynamically generated -->
+        </div>
+    </div>
+
+    <script>
+        // Higher-ranked actors
+        const actorsHigher = [
+        { name: "Frank Welker", count: 33, img: "../actor_images/Frank_Welker.jpg" },
+    { name: "Eddie Murphy", count: 31, img: "../actor_images/Eddie_Murphy.jpg" },
+    { name: "Bruce Willis", count: 28, img: "../actor_images/Bruce_Willis.jpg" },
+    { name: "Tom Hanks", count: 25, img: "../actor_images/Tom_Hanks.jpg" },
+    { name: "Samuel L. Jackson", count: 25, img: "../actor_images/Samuel_L._Jackson.jpg" },
+    { name: "Robin Williams", count: 25, img: "../actor_images/Robin_Williams.jpg" },
+    { name: "Matt Damon", count: 24, img: "../actor_images/Matt_Damon.jpg" },
+    { name: "Jim Cummings", count: 23, img: "../actor_images/Jim_Cummings.jpg" },
+    { name: "Julia Roberts", count: 22, img: "../actor_images/Julia_Roberts.jpg" },
+    { name: "Tom Cruise", count: 21, img: "../actor_images/Tom_Cruise.jpg" },
+    { name: "John Travolta", count: 21, img: "../actor_images/John_Travolta.jpg" },
+    { name: "Owen Wilson", count: 21, img: "../actor_images/Owen_Wilson.jpg" },
+    { name: "Sylvester Stallone", count: 21, img: "../actor_images/Sylvester_Stallone.jpg" },
+    { name: "Nicolas Cage", count: 20, img: "../actor_images/Nicolas_Cage.jpg" },
+    { name: "Mel Gibson", count: 20, img: "../actor_images/Mel_Gibson.jpg" },
+    { name: "Morgan Freeman", count: 20, img: "../actor_images/Morgan_Freeman.jpg" },
+    { name: "Ben Stiller", count: 19, img: "../actor_images/Ben_Stiller.jpg" },
+    { name: "Arnold Schwarzenegger", count: 19, img: "../actor_images/Arnold_Schwarzenegger.jpg" },
+    { name: "Gary Oldman", count: 19, img: "../actor_images/Gary_Oldman.jpg" },
+    { name: "Cameron Diaz", count: 19, img:"../actor_images/Cameron_Diaz.jpg" }
+];
+
+        // Lower-ranked actors
+        const actorsLower = [
+    { name: "Katharine Hepburn", count: 11, img: "../actor_images/Katharine_Hepburn.jpg" },
+    { name: "Robert Woolsey", count: 10, img: "../actor_images/Robert_Woolsey.jpg" },
+    { name: "Steve Buscemi", count: 9, img: "../actor_images/Steve_Buscemi.jpg" },
+    { name: "Seymour Cassel", count: 9, img: "../actor_images/Seymour_Cassel.jpg" },
+    { name: "Lili Taylor", count: 8, img: "../actor_images/Lili_Taylor.jpg" },
+    { name: "Christian Slater", count: 8, img: "../actor_images/Christian_Slater.jpg" },
+    { name: "Kiefer Sutherland", count: 7, img: "../actor_images/Kiefer_Sutherland.jpg" },
+    { name: "Gabriel Byrne", count: 7, img: "../actor_images/Gabriel_Byrne.jpg" },
+    { name: "Rachael Leigh Cook", count: 7, img: "../actor_images/Rachael_Leigh_Cook.jpg" },
+    { name: "Aidan Quinn", count: 7, img: "../actor_images/Aidan_Quinn.jpg" },
+    { name: "Alfred Molina", count: 7, img: "../actor_images/Alfred_Molina.jpg" },
+    { name: "Kelly Preston", count: 7, img: "../actor_images/Kelly_Preston.jpg" },
+    { name: "Adrien Brody", count: 7, img: "../actor_images/Adrien_Brody.jpg" },
+    { name: "Barbara Stanwyck", count: 7, img: "../actor_images/Barbara_Stanwyck.jpg" },
+    { name: "Henry Fonda", count: 7, img:"../actor_images/Henry_Fonda.jpg" },
+    { name:"Bette Davis", count:"7", img:"../actor_images/Bette_Davis.jpg" },
+    { name:"Parker Posey", count:"7", img:"../actor_images/Parker_Posey.jpg" },
+    { name:"Rade Serbedzija", count:"7", img:"../actor_images/Rade_Serbedzija.jpg" },
+    { name:"Kevin Corrigan", count:"6", img:"../actor_images/Kevin_Corrigan.jpg" }
+];
+
+        // Generate actors' cards for a given container
+        function generateActors(containerId, actors, mycolor) {
+            const container = document.getElementById(containerId);
+            const centerX = container.offsetWidth / 3;
+            const centerY = container.offsetHeight / 3;
+            const ringSpacing = 80;
+            const maxSize = 100;
+            const minSize = 50;
+            const sizeStep = (maxSize - minSize) / (actors.length - 1);
+
+            const actorsPerRing = [3, 5, 7];
+
+            actorsPerRing.forEach((count, ringIndex) => {
+                const radius = (ringSpacing - ringIndex * 10) * (ringIndex + 1);
+                const ring = document.createElement('div');
+                ring.className = 'ring';
+                ring.style.width = `${radius * 2}px`;
+                ring.style.height = `${radius * 2}px`;
+                ring.style.left = `${centerX}px`;
+                ring.style.top = `${centerY}px`;
+                ring.style.borderColor = mycolor; 
+                container.appendChild(ring);
+            });
+
+            let actorIndex = 0;
+
+            actorsPerRing.forEach((count, ringIndex) => {
+                const radius = (ringSpacing - ringIndex * 10) * (ringIndex + 1);
+
+                for (let i = 0; i < count; i++) {
+                    if (actorIndex >= actors.length) break;
+
+                    const actor = actors[actorIndex++];
+                    const angle = (2 * Math.PI * i) / count;
+                    const x = centerX + radius * Math.cos(angle);
+                    const y = centerY + radius * Math.sin(angle);
+
+                    const size = maxSize - actorIndex * sizeStep;
+
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.style.width = `${size}px`;
+                    card.style.height = `${size}px`;
+                    card.style.left = `${x - size / 2}px`;
+                    card.style.top = `${y - size / 2}px`;
+
+                    const img = document.createElement('img');
+                    img.src = actor.img;
+                    img.alt = actor.name;
+
+                    const tooltip = document.createElement('div');
+                    tooltip.className = 'tooltip';
+                    tooltip.textContent = `${actor.name} (Count: ${actor.count})`;
+
+                    card.appendChild(img);
+                    card.appendChild(tooltip);
+                    container.appendChild(card);
+                }
+            });
+        }
+
+        // Generate both sides
+        generateActors('higher', actorsHigher, 'orange');
+        generateActors('lower', actorsLower, 'blue');
+    </script>
+</body>
+</html>

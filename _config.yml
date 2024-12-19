@@ -33,6 +33,7 @@ analytics:
 collections:
   portfolio:
   certificate:
+  classification:
 
 markdown: kramdown
 

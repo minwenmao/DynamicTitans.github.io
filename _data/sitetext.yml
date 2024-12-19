@@ -95,9 +95,24 @@ en: &DEFAULT_EN
       
       However, English-language films face a different challenge. With their large output and broad appeal, English-language films flood the cinematic kingdom with a wide variety of stories. This abundance leads to a dilution effect, where red "Overperformed" films and blue "Hidden Gems" often get lost among the large number of ordinary films, resulting in both successes and failures.
     text11: Huh! So how are the genres distributed within these two groups? This is crucial!
+    text12: |
+      In the overperformed group, the Thriller genre stands head and shoulders above the rest. These films captivate large audiences with their intense, gripping plots and suspenseful twists. Despite receiving relatively low ratings, they dominate the box office. This seems to reflect audiences' craving for strong emotional experiences or perhaps highlights key factors, such as star-studded casts or marketing strategies, that drive their success.
+      In the underperformed group, the Drama genre takes the undisputed lead. These films earn high ratings through their profound storytelling and outstanding performances, yet fail to achieve corresponding box office success. Perhaps the introspective and weighty nature of dramas makes them more suited for critical acclaim and niche audiences rather than widespread commercial appeal.
     subtitle2: Sorting Hat(Classification)
-    section: certificates
+    body: "The “birth certificate” also reveals something extraordinary: spirites were born on the distant planet Earth, crafted by magical “craftsmen” known as actors and actresses. These forgers used their wisdom and imagination to bring the movie sprites to life, and each certificate lists not only the sprites’ identities but also their brilliant creators"
+    text13: Who are the main creators of these two groups? Let's take a look!
+    text14: Ah! So it’s them! Those craftsmen who have consistently lit up the box office in overperforming films! And those who... Due to bad timing, poor choices, or simply bad luck.
+    text15: Oh, right! We can also explore this through the chord diagram below. This chart will allow us to see how each "primary" genre of film corresponds to the gender of the "craftsmen" — the actors and actresses featured in these films.
+    section: classification
     closebutton: "Close Project"
+
+
+  spirits:
+    text: What? Amazing! We've gained access to the Movie Spirits Archive!
+    body: This place is brimming with magic and the essence of storytelling. Looking around, we see towering bookshelves spiraling upward like reels of film, while floating pages and glowing screens seem to whisper, narrating one captivating tale after another. Here, the unique experiences of every movie spirit are stored. Finally, we can go beyond the surface and delve deeper into analyzing the distinct characteristics of each spirit!
+    title: The Movie Spirits Archive
+    text1: But with all these long passages of text... Where should we even begin?
+    text2: Each movie spirit is composed of numerous sentence fragments. We treat each sentence as an individual unit of analysis, examining both its emotional category and sentiment polarity!
 
   services:
     title: "Services"
