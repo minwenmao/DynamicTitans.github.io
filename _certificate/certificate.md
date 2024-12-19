@@ -1,13 +1,13 @@
 ---
 caption: #what displays in the portfolio grid:
-  title: Overperformed
-  subtitle: Dazzling Fireworks
-  thumbnail: assets\img\intro\over.png
+  title: Birth Certificate
+  subtitle: Dadaset
+  thumbnail: assets\img\certificate.png
   
 #what displays when the item is clicked:
-title: Overperformed
-subtitle:
-image:  assets\img\intro\over.png #main image, can be a link or a file in assets/img/portfolio
+title: Birth Certificate
+subtitle: 
+image: #main image, can be a link or a file in assets/img/portfolio
 alt:
 
 ---

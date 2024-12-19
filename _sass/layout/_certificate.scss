@@ -1,16 +1,17 @@
-// Styling for the portfolio section
-#portfolio {
-  margin-top: 0px;
-  .portfolio-item {
+// Styling for the certificate section
+#certificate {
+  margin-left: 0px;
+  margin-bottom: -100px;
+  .certificate-item {
     right: 0;
-    margin: 0 0 15px;
-    .portfolio-link {
+    margin: 100px 0 15px;
+    .certificate-link {
       position: relative;
       display: block;
       max-width: 600px;
       margin: 0 auto;
       cursor: pointer;
-      .portfolio-hover {
+      .certificate-hover {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -22,7 +23,7 @@
         &:hover {
           opacity: 1;
         }
-        .portfolio-hover-content {
+        .certificate-hover-content {
           font-size: 20px;
           position: absolute;
           top: 50%;
@@ -42,14 +43,15 @@
         }
       }
     }
-    .portfolio-caption {
+    .certificate-caption {
       max-width: 400px;
       margin: 0 auto;
       padding: 25px;
       text-align: center;
-      background-color: $white;
-      h4 {
+      background-color: transparent;
+      h3 {
         margin: 0;
+        font-size: 16px;
         text-transform: none;
       }
       p {
@@ -65,14 +67,14 @@
   }
 }
 @media (min-width: 767px) {
-  #portfolio {
-    .portfolio-item {
+  #certificate {
+    .certificate-item {
       margin: 0 0 30px;
     }
   }
 }
 
-.portfolio-modal {
+.certificate-modal {
   .modal-dialog {
     margin: 1rem;
     max-width: 100vw;
@@ -83,6 +85,11 @@
     h2 {
       font-size: 3em;
       margin-bottom: 15px;
+    }
+    h4 {
+      font-size: 3em;
+      margin-bottom: 15px;
+      background-color: transparent;
     }
     p {
       font-size: 20px;
@@ -144,4 +151,9 @@
       }
     }
   }
+}
+.bg-dark {
+  background-color: #000; /* 全黑背景 */
+  color: #fff; /* 默认文字颜色为白色 */
+  padding: 50px 0; /* 调整上下间距 */
 }

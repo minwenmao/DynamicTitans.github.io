@@ -32,6 +32,17 @@ en: &DEFAULT_EN
     section: portfolio
     closebutton: "Close Project"
 
+  certificate:
+    title: "birth certificate"
+    text: "Look at what we’ve found! A birth certificate! Click to see what’s recorded inside!"
+    body: |
+      These little sprites did not come into existence out of thin air; each of them possesses a precious “birth certificate”. These magical details are carefully stored, ready to tell each film's unique story! 
+
+      The “birth certificate” also reveals something extraordinary: spirites were born on the distant planet Earth, crafted by magical “craftsmen” known as actors and actresses. These forgers used their wisdom and imagination to bring the movie sprites to life, and each certificate lists not only the sprites’ identities but also their brilliant creators.
+    
+    section: certificates
+    closebutton: "Close Project"
+
   services:
     title: "Services"
     text: "Lorem ipsum"
