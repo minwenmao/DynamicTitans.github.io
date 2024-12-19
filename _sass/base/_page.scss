@@ -54,6 +54,30 @@ h6 {
     text-transform: none;
     @include serif-font;
   }
+  h5.section-subheading {
+    font-size: 22px;
+    font-weight: 40;
+    line-height: 0px;
+    color: $black;
+    font-style: italic;
+    margin-bottom: 0px;
+    text-transform: none;
+    @include serif-font;
+  }
+  p.section-subheading {
+    font-size: 25px;
+    font-weight: 0;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-style: initial;
+    text-transform: none;
+    text-align: justify;
+    text-indent: 2em;
+    color: #000;
+  }
+
   h6.section-subsubheading {
     font-size: 20px;
     font-weight: 400;
