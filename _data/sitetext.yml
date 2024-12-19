@@ -113,7 +113,8 @@ en: &DEFAULT_EN
     title: The Movie Spirits Archive
     text1: But with all these long passages of text... Where should we even begin?
     text2: Each movie spirit is composed of numerous sentence fragments. We treat each sentence as an individual unit of analysis, examining both its emotional category and sentiment polarity!
-
+    text3: In the mystical Kingdom of Cinema, every movie carries an emotional story. We summoned the language wizard BERT to classify these emotions into twelve categories. Among the first 80 movies we explored, worry dominated, adding tension to the plots. Meanwhile, surprise ignited curiosity, and neutrality maintained the narrative rhythm. This diverse emotional composition brought the movie elves to life with vivid vibrancy.
+    text4: In the mystical Kingdom of Cinema, every movie spirit embarks on an emotional journey. To trace these arcs, we called upon the sorcerer SnowNLP, a master of sentiment magic, who assigns each sentence a score ranging from 0 (negative) to 1 (positive). With this spell, we uncover the emotional ebb and flow of each story, mapping the highs and lows that bring the movie spirits to life with their unique vibrancy.
   services:
     title: "Services"
     text: "Lorem ipsum"

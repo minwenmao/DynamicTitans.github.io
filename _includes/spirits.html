@@ -1,18 +1,14 @@
-<section class="bg-black page-section" id="{{ site.data.sitetext.spirits.section | default: "spirits" }}">
+<section class="bg-white page-section" id="{{ site.data.sitetext.spirits.section | default: "spirits" }}">
     <div class="container">
+        <div style="text-align: center; margin: 50px 0;"></div>
       <div class="row">
         <div class="col-lg-12">
-          <h4 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].spirits.text | markdownify }}</h3>
+          <h5 class="section-subheading">{{ site.data.sitetext[site.locale].spirits.text | markdownify }}</h5>
           <h2 class="section-heading text-uppercase text-center">{{ site.data.sitetext[site.locale].spirits.title | markdownify | default: "certificate" }}</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
-            <img src="{{ classification.image3 | default: '/assets/img/spirits/spirits.png' }}" alt="Geographical Dimension" 
-              class="img-fluid" style="max-width: 100%; height: auto;">
-        </div>
-            <!-- 右侧正文内容 -->
-        <div class="col-md-6">
+        <div class="col-md-12">
             <h6 class = 'section-subheading'>{{ site.data.sitetext[site.locale].spirits.body | markdownify | default: "certificate" }}</h6>
         </div>
         </div>
@@ -20,7 +16,7 @@
     <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <h4 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].spirits.text1 | markdownify }}</h3>
+            <h5 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].spirits.text1 | markdownify }}</h5>
           </div>
         </div>
         <div class="row">
@@ -28,5 +24,25 @@
               <h6 class = 'section-subheading'>{{ site.data.sitetext[site.locale].spirits.text2 | markdownify | default: "certificate" }}</h6>
           </div>
         </div>
-    </div> 
+        <div style="text-align: center; margin: 20px 0;">
+            <h6 style="margin-top: 10px; font-size: 25px; color: #555;">
+            Emotional Category
+            </h6>
+            <h6 class = 'section-subheading'>{{ site.data.sitetext[site.locale].spirits.text3 | markdownify | default: "certificate" }}</h6>
+            <img src="{{ classification.image3 | default: '/assets/img/spirits/label_distribution.png' }}" alt="Geographical Dimension" 
+                  class="img-fluid" style="max-width: 100%; height: auto;">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div style="text-align: center; margin: 40px 0;">
+                <h6 style="margin-top: 10px; font-size: 25px; color: #555;">
+                    Emotional Curve
+                </h6>
+                <h6 class = 'section-subheading'>{{ site.data.sitetext[site.locale].spirits.text4 | markdownify | default: "certificate" }}</h6>
+                <img src="{{ classification.image3 | default: '/assets/img/spirits/label_curve.png' }}" alt="Geographical Dimension" 
+                    class="img-fluid" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+    </div>
   </section>
