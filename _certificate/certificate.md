@@ -2,7 +2,7 @@
 caption: #what displays in the portfolio grid:
   title: Birth Certificate
   subtitle: Dadaset
-  thumbnail: assets\img\certificate.png
+  thumbnail: assets\img\certificate\certificate.png
   
 #what displays when the item is clicked:
 title: Birth Certificate

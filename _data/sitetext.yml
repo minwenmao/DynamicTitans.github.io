@@ -45,6 +45,21 @@ en: &DEFAULT_EN
       But hold on, can they be used directly?
 
       Let’s take a look at how box office revenue changes over time!
+    image: assets\img\certificate\revenue.png
+    text2: |
+      Why does box office revenue keep increasing? Are those old movies really not popular?
+
+      In fact, the answer doesn’t lie in the movies themselves but in a kind of magic cast by time!
+    text3: |
+      We must understand that, just like in our human world, the cinematic kingdom faces an unavoidable problem—inflation. The value of "MovieCoin" from a hundred years ago is vastly different from what it is today! Those classic films from the last century, although they earned a fortune at the time, might have their achievements overshadowed by modern blockbusters if we don’t account for the changes over time. After all, 100 million MovieCoins today might be a mere drop in the bucket, while in the past, it was enough to shake the entire kingdom.
+
+      To ensure that those "old-timers" from history receive a fair evaluation, we decided to use a powerful tool—the CPI Index (Consumer Price Index). It acts as a "temporal balance," allowing us to transcend time and adjust the values of the past to match those of the present on an equal footing.
+    text4: Hummmm, that looks much more reasonable now!
+    text5: |
+      Alright, with these "identifications" in hand, our investigation has finally entered the next phase. How can we actually distinguish these rare groups from the ordinary ones? Just like the Sorting Hat in Harry Potter! We think that before developing such a "magic hat," we need to take a closer look at the relationship between ratings and box office revenue, as well as their connections with various identity attributes!
+      
+      Oh, right! We took the ADA course! The one we took before all this began. That course wasn’t just about crunching numbers or making pretty charts. It taught us something more—a kind of “magic,” the ability to dig beneath the surface and reveal hidden truths using data and models. Maybe, just maybe, this is the tool we need to crack the mysteries of the Land of Light and Shadow. Let’s give it a try.
+    subtitle2: Sorting Hat(Classification)
     section: certificates
     closebutton: "Close Project"
 

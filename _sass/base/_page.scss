@@ -45,8 +45,9 @@ h6 {
     @include serif-font;
   }
   h4.section-subheading {
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 40;
+    line-height: 0px;
     color: $primary !important;
     font-style: italic;
     margin-bottom: 0px;
@@ -71,7 +72,7 @@ h6 {
     margin-bottom: 20px;
     margin-top: 0px;
     margin-left: 0px;
-    margin-right: 100px;
+    margin-right: 0px;
     font-style: initial;
     text-transform: none;
     text-align: justify;
