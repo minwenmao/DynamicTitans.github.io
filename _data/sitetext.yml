@@ -39,7 +39,12 @@ en: &DEFAULT_EN
       These little sprites did not come into existence out of thin air; each of them possesses a precious “birth certificate”. These magical details are carefully stored, ready to tell each film's unique story! 
 
       The “birth certificate” also reveals something extraordinary: spirites were born on the distant planet Earth, crafted by magical “craftsmen” known as actors and actresses. These forgers used their wisdom and imagination to bring the movie sprites to life, and each certificate lists not only the sprites’ identities but also their brilliant creators.
-    
+    text1: |
+      Great job! The box office and ratings we care about are also in this dataset! 
+
+      But hold on, can they be used directly?
+
+      Let’s take a look at how box office revenue changes over time!
     section: certificates
     closebutton: "Close Project"
 

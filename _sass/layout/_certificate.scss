@@ -1,10 +1,10 @@
 // Styling for the certificate section
 #certificate {
   margin-left: 0px;
-  margin-bottom: -100px;
+  margin-bottom: 0px;
   .certificate-item {
     right: 0;
-    margin: 100px 0 15px;
+    margin: 100px 0px 15px;
     .certificate-link {
       position: relative;
       display: block;
@@ -94,8 +94,8 @@
     p {
       font-size: 20px;
       margin-bottom: 20px;
-      margin-left: -30px;
-      margin-right: -30px;
+      margin-left: -200px;
+      margin-right: -200px;
       text-align: left;
       text-indent: 2em;
     }
@@ -152,8 +152,11 @@
     }
   }
 }
-.bg-dark {
-  background-color: #000; /* 全黑背景 */
+.bg-black {
+  background-color: $black !important; /* 全黑背景 */
   color: #fff; /* 默认文字颜色为白色 */
-  padding: 50px 0; /* 调整上下间距 */
+  padding-top: 50px;
+  padding-right: 0;
+  padding-bottom: 0px;
+  padding-left: 0;
 }
