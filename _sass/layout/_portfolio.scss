@@ -1,5 +1,6 @@
 // Styling for the portfolio section
 #portfolio {
+  margin-top: -300px;
   .portfolio-item {
     right: 0;
     margin: 0 0 15px;
@@ -36,6 +37,7 @@
           h3,
           h4 {
             margin: 0;
+            text-align: center;
           }
         }
       }
