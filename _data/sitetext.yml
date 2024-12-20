@@ -14,7 +14,7 @@ en: &DEFAULT_EN
     title: Unpacking the Gap Between Critics and Cash
     text: Blockbusters and Busts
     button: Tell Me More
-    buttonlink: "#services"
+    buttonlink: "#intro"
 
   intro:
     title: "Introduction"
