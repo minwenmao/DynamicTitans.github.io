@@ -44,6 +44,7 @@ en: &DEFAULT_EN
 
       Let’s take a look at how box office revenue changes over time!
     image: assets\img\certificate\revenue.png
+    image3: /assets/img/certificate/certificate.png
     text2: |
       Why does box office revenue keep increasing? Are those old movies really not popular?
 
