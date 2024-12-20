@@ -41,29 +41,27 @@
       <div class="col-md-12">
         <div style="text-align: center; margin: 20px 0;"></div>
         <h3 class="section-heading text-uppercase text-center">{{ site.data.sitetext[site.locale].classification.title1 | markdownify | default: "certificate" }}</h3>
+        <h6 class="section-subheading">
+          {{ site.data.sitetext[site.locale].classification.textb | markdownify }}
+        </h6>
       </div>
-      <h6 class="section-subheading">
-        {{ site.data.sitetext[site.locale].classification.textb | markdownify }}
-      </h6>
-    </div>
-    <div class="row">
+
       <!-- 左侧内容（图片和标题） -->
-      <div class="col-md-8">
+      <div class="col-md-6">
         <div style="text-align: center; margin: 20px 0;">
-          <iframe src="assets/img/dynamic_plots/movie_ratings_and_revenue.html" 
-          style="width: 850px; height: 700px; border: none; margin: auto; display: block;">
+          <iframe src="assets/img/dynamic_plots/animated_movie_chart_70percent.html" 
+          style="width: 150%; height: 600px; border: none; margin-left: -20px;margin-top: -60px; display: block;">
         </iframe>
         </div>
       </div>
       <!-- 右侧正文内容 -->
-      <div class="col-md-4">
+      <div class="col-md-6">
         <h6 class="section-subheading">
           {{ site.data.sitetext[site.locale].classification.textc | markdownify }}
         </h6>
       </div>
-    </div>
-    <div class="row">
       <div class="col-md-12">
+        <div style="text-align: center; margin: -40px 0;"></div>
         <h6 class="section-subheading">
           {{ site.data.sitetext[site.locale].classification.textd | markdownify }}
         </h6>
@@ -217,7 +215,7 @@
           Geographical Dimension
         </h6>
         <iframe src="assets/img/dynamic_plots/correlation_per_country.html" 
-          style="width: 120%; height: 950px; border: none; margin: auto; display: block;">
+          style="width: 120%; height: 950px; border: none; margin-left: -40px; display: block;">
         </iframe>
       </div>
       <h6 class="section-subheading">

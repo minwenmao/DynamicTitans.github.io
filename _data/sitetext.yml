@@ -152,58 +152,32 @@ en: &DEFAULT_EN
 
       But their work didn’t stop there. Using ancient and mysterious spells, the librarians cast enchantments over each sentence, marking its emotional category and sentiment polarity. A single word might glow with joy, while another shimmered with sorrow or burned with anger. These magical annotations transformed the simple words into a symphony of emotions, giving life to the pages and allowing the diaries to truly speak. 
     title: The Diary of Movie Spirits.
+    text10: |
+      The difference is striking: Underperformed are skewed toward fewer emotional fluctuations, rarely exceeding 14, suggesting more static or predictable emotional trajectories. In contrast, the Overperformed group shows a more balanced distribution around 12-13 fluctuations, with higher averages overall.
+
+      This is yet another sign among many others of how the Overperformed group seemingly “manipulates” audiences into being emotionally (and financially) invested by dynamically shifting emotions throughout the plot, incorporating more twists and turns in total—compared to their Underperformed counterparts, who may fail to hold attention due to (perceived) flatter emotional arcs that lack variety or impact.
+
+      We can approach a similar conclusion upon plotting the distribution of the total magnitude of fluctuation—i.e., the absolute difference between the maximum and the minimum—for both groups. Once again, the Overperformed group tends towards a higher fluctuation magnitude overall than the Underperformed.
+    text11: 'What seemingly challenges this is when we try to reveal the trends of sentiment change in either the Overperformed group or the Underperformed group, by performing linear regression on each entry in each. The intercept of the regression line should be a decent shorthand of the total, or initial, sentiment of the movie, while the slope represents the overall sentimental shift of each movie. We once again plot their distribution:'
+    text12: |
+      Both the Overperformed group and the Underperformed group with meaningful sentiment arcs are more likely to exhibit an upward trajectory (negative to positive), reflecting the universal appeal of stories that move toward resolution or hope. Surprisingly, and seemingly contradicting our conclusions about the Overperformed group “manipulating” audiences into engagement, they tend to have lower slopes, indicating smaller overall sentiment shifts compared to the Underperformed.
+      
+      Even this apparent contradiction has an explanation—perhaps even a clever twist on our assumptions about the Overperformed group. They don’t need their plots to move neatly from sadness to happiness; instead, they might be playing a subtler game. By expertly manipulating audience emotions within smaller shifts, they create a dynamic viewing experience that feels richer and more engaging without relying on a dramatic overall arc. Maybe it’s precisely because these films don’t commit to clear-cut sentiment trajectories that they manage to surprise and exceed audience expectations—even at the expense of critical approval. Who needs a concrete story arc when you can keep viewers on the edge of their seats?
+      
+      Alternatively, the Overperformed group might be winning audiences over from the get-go, starting with a more positive tone that hooks viewers early on. It could be that critics—trained to analyze structure and subtlety—value coherence and upward arcs, while general audiences are more easily swayed by in-the-moment emotional highs and an inviting opening vibe.
+      
+      In the end, maybe we’ve misjudged the Overperformed group. It turns out they might not be “manipulating” their way to success after all. Or, who knows—maybe they’ve just mastered the art of emotional sleight of hand, leaving us all guessing what really makes them tick. Either way, it’s a reminder that there’s rarely one simple formula for what works in cinema.
+    finale: finale
+    text13: |
+      In the heart of the mystical forest of the Kingdom of Cinema, after countless adventures and discoveries, we have finally unveiled the secrets of two legendary tribes—the "Overperformed Group" and the "Hidden Gems Group." Like ethereal spirits of the cinematic world, they dwell within the interplay of light and shadow, waiting to be uncovered by those destined to find them.
     
-  
-  services:
-    title: "Services"
-    text: "Lorem ipsum"
-    section: services
-    list:
-      - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Your description here, full **Markdown** support"
-        icon: fab fa-markdown
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Your description here, full **Markdown** support"
-        icon: fab fa-markdown
-
-
-  timeline:
-    title: "Timeline"
-    text: "Lorem ipsum timeline"
-    section: timeline
-    # left is the default
-    #start_align: "left"
-    events:
-      - title: "Our Humble Beginnings"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/1.jpg
-        alt:
-      - title: "An Agency is Born"
-        year: "March 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/2.jpg
-        alt:
-      - title: "Jekyll Theme is created"
-        year: "2019"
-        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
-        image: assets/img/timeline/3.jpg
-        alt: image alt text
-      - title: "Title"
-        year: "2009-2011"
-        desc: "Your description here, **Markdown** is fully supported."
-        image: assets/img/timeline/4.jpg
-        alt:
-        # you can enforce the alignment
-        align: right
-    end: "Be Part <br> of Our <br> Story!"
-
+      Through the enchantment of our unique magic, we caught a glimpse of their mysteries. The films cherished by the Overperformed Group shine brightly, like celestial stars, always exceeding expectations and igniting the passion of their audience. Meanwhile, the Hidden Gems Group resembles the gentle glow of fireflies in the night—unnoticed by many, yet cherished by those who understand their quiet brilliance.
+    
+      Dear travelers, it is now time for us to bid farewell to this enchanting planet. Please, treasure these magical memories within your hearts. Should you ever wish to return to the Kingdom of Cinema and learn more about these fascinating tribes, do not hesitate to call our magical hotline—we are always here to guide you back.
+    
+      As our interstellar journey comes to a close, may this extraordinary adventure leave you with a spark of cinematic wonder and cherished memories of this remarkable world.
+     
+      Farewell, until we meet again!
 
   team:
     title: "OUR AMAZING TEAM"

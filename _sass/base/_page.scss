@@ -102,6 +102,16 @@ h6 {
     text-align: justify;
     text-indent: 2em;
   }
+  h5.section-subsubheading {
+    font-size: 22px;
+    font-weight: 40;
+    line-height: 0px;
+    color: purple;
+    font-style: italic;
+    margin-bottom: 0px;
+    text-transform: none;
+    @include serif-font;
+  }
 
 }
 @media (min-width: 768px) {
