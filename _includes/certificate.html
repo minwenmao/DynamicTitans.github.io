@@ -20,7 +20,7 @@
                     <i class="{{ site.data.style.certificate-icon | default: "fas fa-plus fa-3x" }}"></i>
                   </div>
                 </div>
-                <img class="img-fluid" src="{{'/assets/img/classification/certificate.png' }}" alt="">
+                <img class="img-fluid" src="{{'./assets/img/classification/certificate.png' }}" alt="">
               </a>
               <div class="certificate-caption">
                 <h4>{{ project.caption.title }}</h4>
@@ -46,7 +46,7 @@
   
         <!-- 图片 -->
         <div style="text-align: center; margin: 20px 0;">
-          <img src="{{ certificate.image | default: '/assets/img/certificate/revenue.png' }}" alt="Certificate Image" 
+          <img src="{{ certificate.image | default: './assets/img/certificate/revenue.png' }}" alt="Certificate Image" 
                class="img-fluid" style="max-width: 80%; height: auto;">
         </div>
   
