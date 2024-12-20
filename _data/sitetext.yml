@@ -184,12 +184,12 @@ en: &DEFAULT_EN
     title: "OUR AMAZING TEAM"
     section: team
     people:
-      - name: "Leo Ganser"
+      - name: "Leo Thorwald Ganser"
         image: assets/img/team/leo.jpeg
       - name: "Ruoxi Zhang"
-        image: assets/img/team/Ruoxi.png
+        image: assets/img/team/Ruoxi.jpg
       - name: "Gengfu Lin"
-        image: assets/img/team/Gengfu.png
+        image: assets/img/team/Gengfu.jpg
       - name: "Kaile Chu"
         image: assets/img/team/Kaile.jpg
       - name: "Minwen Mao"
