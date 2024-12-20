@@ -118,8 +118,11 @@
           <h2 class="section-heading text-uppercase text-center">{{ site.data.sitetext[site.locale].spirits.finale | markdownify | default: "certificate" }}</h2>
           <h4 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].spirits.text13 | markdownify }}</h4>
           <div style="text-align: center; margin: 40px 0;"></div>
-        </div>
-      </div>
+        <img src="{{ classification.image3 | default: '/assets/img/finale.png' }}" alt="Geographical Dimension" 
+        class="img-fluid" style="max-width: 60%; height: auto; margin-left: 200px;">
+        <div style="text-align: center; margin: 50px 0;"></div>
+    </div>
+</div>
       <div style="text-align: center; margin: 50px 0;"></div>
     </div>   
 </section>
