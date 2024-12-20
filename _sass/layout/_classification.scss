@@ -76,12 +76,12 @@
 
 .classification-modal {
   .modal-dialog {
-    margin: 1rem;
-    max-width: 100vw;
+    margin: auto;
+    max-width: 60vw;
+    text-align: center;
   }
   .modal-content {
     padding: 100px 0;
-    text-align: center;
     h2 {
       font-size: 3em;
       margin-bottom: 15px;
@@ -93,9 +93,9 @@
     }
     p {
       font-size: 20px;
-      margin-bottom: 20px;
-      margin-left: 0px;
-      margin-right: -200px;
+      // margin-bottom: 20px;
+      // margin-left: 0px;
+      // margin-right: -200px;
       text-align: left;
       text-indent: 2em;
     }
