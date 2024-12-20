@@ -3,21 +3,22 @@
         <div style="text-align: center; margin: 50px 0;"></div>
       <div class="row">
         <div class="col-lg-12">
-          <h5 class="section-subheading">{{ site.data.sitetext[site.locale].spirits.text | markdownify }}</h5>
           <h2 class="section-heading text-uppercase text-center">{{ site.data.sitetext[site.locale].spirits.title | markdownify | default: "certificate" }}</h2>
+          <h5 class="section-subheading">{{ site.data.sitetext[site.locale].spirits.text | markdownify }}</h5>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
             <h6 class = 'section-subheading'>{{ site.data.sitetext[site.locale].spirits.body | markdownify | default: "certificate" }}</h6>
+            <h5 class="section-subheading">{{ site.data.sitetext[site.locale].spirits.text1 | markdownify }}</h5>
+            <h6 class = 'section-subheading'>{{ site.data.sitetext[site.locale].spirits.text9 | markdownify | default: "certificate" }}</h6>
         </div>
         </div>
     </div>   
     <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <h5 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].spirits.text1 | markdownify }}</h5>
-          </div>
+           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
@@ -40,7 +41,9 @@
                     Emotional Curve
                 </h6>
                 <h6 class = 'section-subheading'>{{ site.data.sitetext[site.locale].spirits.text4 | markdownify | default: "certificate" }}</h6>
-                <img src="{{ classification.image3 | default: '/assets/img/spirits/label_curve.png' }}" alt="Geographical Dimension" 
+                <img src="{{ classification.image3 | default: '/assets/img/spirits/spirit1.png' }}" alt="Geographical Dimension" 
+                    class="img-fluid" style="max-width: 100%; height: auto;">
+                <img src="{{ classification.image3 | default: '/assets/img/spirits/spirit2.png' }}" alt="Geographical Dimension" 
                     class="img-fluid" style="max-width: 100%; height: auto;">
             </div>
         </div>
