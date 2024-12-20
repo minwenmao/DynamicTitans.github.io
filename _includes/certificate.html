@@ -13,7 +13,7 @@
         <div class="col-md-12 certificate-item">
           <div class="row">
             <!-- 左侧内容（图片和标题） -->
-            <div class="col-md-6">
+            <div class="col-md-5">
               <a class="certificate-link" data-toggle="modal" href="#c{{ forloop.index }}">
                 <div class="certificate-hover">
                   <div class="certificate-hover-content">
@@ -28,7 +28,7 @@
               </div>
             </div>
             <!-- 右侧正文内容 -->
-            <div class="col-md-6">
+            <div class="col-md-7">
               <h6 class = 'section-subheading'>{{ site.data.sitetext[site.locale].certificate.body | markdownify | default: "certificate" }}</h6>
             </div>
         </div>
@@ -47,7 +47,7 @@
         <!-- 图片 -->
         <div style="text-align: center; margin: 20px 0;">
           <img src="{{ certificate.image | default: '/assets/img/certificate/revenue.png' }}" alt="Certificate Image" 
-               class="img-fluid" style="max-width: 100%; height: auto;">
+               class="img-fluid" style="max-width: 80%; height: auto;">
         </div>
   
         <!-- 第二段文字 -->
@@ -63,7 +63,7 @@
         <!-- 图片 -->
         <div style="text-align: center; margin: 20px 0;">
           <img src="{{ certificate.image2 | default: '/assets/img/certificate/new_revenue.png' }}" alt="Certificate Image" 
-               class="img-fluid" style="max-width: 100%; height: auto;">
+               class="img-fluid" style="max-width: 80%; height: auto;">
         </div>
 
         <h4 class="section-subheading text-muted">
